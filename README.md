@@ -64,3 +64,12 @@ iptables -A POSTROUTING -t nat -s 172.16.0.0/24 -o eth0 -j MASQUERADE
 
 # Az eth0-ra érkező, 80-as TCP port forgalmat irányítsuk a belső 172.16.1.2-re
 iptables -A PREROUTING -t nat -i eth0 -d <ROUTER_KÜLSŐ_IP> -p tcp --dport 80 -j DNAT --to-destination 172.16.1.2:80
+
+# STP állapot lekérdezése (van-e loop/blocking?)
+brctl show
+
+# STP bekapcsolása (bridge neve általában br0)
+ip link set br0 type bridge stp_state 1
+
+# Részletes port információk (Blocking, Forwarding, Learning állapotok)
+brctl showstp br0

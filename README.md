@@ -1,27 +1,5 @@
 # Telekommunikációs Hálózatok – Kathara Labor Tudásbázis
 
-Ez a dokumentum a Kathara laborgyakorlatok (1-3. feladat) során használt parancsokat, konfigurációs sablonokat és diagnosztikai lépéseket tartalmazza egyetlen, könnyen kereshető helyen.
-
-## Tartalomjegyzék
-1. [Környezet és Kathara Parancsok](#1-környezet-és-kathara-parancsok)
-2. [L2/L3 Konfiguráció (IP és Interface)](#2-l2l3-konfiguráció-ip-és-interface)
-3. [Routing (Útválasztás)](#3-routing-útválasztás)
-    - [Statikus Routing](#statikus-routing)
-    - [Dinamikus Routing (OSPF)](#dinamikus-routing-ospf)
-4. [Hálózati Szolgáltatások](#4-hálózati-szolgáltatások)
-    - [DHCP](#dhcp-szerver-és-kliens)
-    - [DNS](#dns-bind9)
-    - [SSH](#ssh-távoli-elérés)
-    - [Web Szerver](#web-szerver)
-5. [Tűzfal és NAT (iptables)](#5-tűzfal-és-nat-iptables)
-    - [Szűrés (Firewall)](#tűzfal-filtering)
-    - [NAT (Masquerade)](#nat-kifelé-menő-forgalom)
-    - [Port Forwarding (DNAT)](#port-forwarding-befelé-jövő-forgalom)
-6. [Switching (STP)](#6-switching-stp)
-7. [Hibakeresés és Diagnosztika](#7-hibakeresés-és-diagnosztika)
-
----
-
 ## 1. Környezet és Kathara Parancsok
 
 A laborfeladatok elindítása és kezelése a gazdagépen.
